@@ -5,7 +5,11 @@ module ZATCA
       vat_registration_number: 2,
       timestamp: 3,
       invoice_total: 4,
-      vat_total: 5
+      vat_total: 5,
+      invoice_hash: 6,
+      digital_signature: 7,
+      public_key: 8,
+      certificate_signature: 9
     }.freeze
 
     attr_accessor :id, :key, :value

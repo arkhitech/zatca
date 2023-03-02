@@ -28,6 +28,9 @@ tags = {
   timestamp: "2021-10-20T19:29:32+03:00",
   vat_total: "15",
   invoice_total: "115",
+  digital_signature: "1234",
+  public_key: "145345",
+  certificate_signature: "3452345"
 }
 
 ZATCA.render_qr_code(tags)
@@ -46,6 +49,9 @@ tags = ZATCA::Tags.new({
   timestamp: "2021-10-20T19:29:32+03:00",
   vat_total: "15",
   invoice_total: "115",
+  digital_signature: "1234",
+  public_key: "145345",
+  certificate_signature: "3452345"
 })
 
 generator = ZATCA::QRCodeGenerator.new(tags)
